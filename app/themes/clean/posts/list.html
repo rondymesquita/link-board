@@ -19,7 +19,7 @@
 			<h2 class="post-title">
 				{{constants.categories}}
 			</h2>
-			<div ng-repeat="category in categories" class="post-preview">
+			<div ng-repeat="category in categories | orderBy: 'title'" class="post-preview">
 				<a href="{{category.url}}">
 					<h2 class="post-title">
 						{{category.title}}
@@ -41,7 +41,7 @@
             <h3 ng-show="postsFiltered.length > 0">{{constants.searchResultTitle}} {{postsFiltered.length}}</h3>
             <h3 ng-show="postsFiltered.length == 0">{{constants.searchEmptyResultTitle}}</h3>
 
-			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage | filter:search as postsFiltered" class="post-preview">
+			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage | orderBy: 'title' | filter:search as postsFiltered" class="post-preview">
 				<a href="{{post.url}}" target="_blank">
 					<h2 class="post-title">
 						{{post.title}}
