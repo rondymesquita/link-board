@@ -1,0 +1,37 @@
+<phx-header>
+</phx-header>
+<title>{{appName}} - {{title}}</title>
+<div class="container-fluid mainContent">
+
+    <div class="row sub-header">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <h2 ng-show="posts.length > 0">{{constants.searchResultTitle}} {{search}}</h2>
+            <h2 ng-show="posts.length == 0">{{constants.searchEmptyResultTitle}} {{search}}</h2>
+            <a ng-show="posts.length == 0" href="#/" class="btn btn-default">Voltar para o início</a>
+        </div>
+    </div>
+
+    <div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage" class="post-preview">
+				<a href="{{post.url}}">
+					<h2 class="post-title">
+						{{post.title}}
+					</h2>
+                    <p class="post-subtitle">
+						{{post.excerpt}}
+					</p>
+				</a>
+				<p class="post-meta">{{post.date}} {{constants.postedBy}} {{post.author}}</p>
+			</div>
+			<hr>
+
+			<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+
+		</div>
+	</div>
+
+
+</div>
+<phx-footer>
+</phx-footer>
