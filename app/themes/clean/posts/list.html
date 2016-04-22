@@ -42,15 +42,15 @@
             <h3 ng-show="postsFiltered.length == 0">{{constants.searchEmptyResultTitle}}</h3>
 
 			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage | filter:search as postsFiltered" class="post-preview">
-				<a href="{{post.url}}">
+				<a href="{{post.url}}" target="_blank">
 					<h2 class="post-title">
 						{{post.title}}
 					</h2>
 				</a>
                 <div style="display:table;margin:auto">
-                <span ng-repeat="category in post.categories" class="post-subtitle">
-                    <a href="#/category/{{category}}">{{category}}</a><span ng-show="$first || $middle">,</span>
-                </span>
+                    <span ng-repeat="category in post.categories" class="post-subtitle">
+                        <a href="#/category/{{category}}">{{category}}</a><span ng-show="$first || $middle">,</span>
+                    </span>
                 </div>
 			</div>
 			<hr>

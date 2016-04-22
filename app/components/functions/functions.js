@@ -33,8 +33,12 @@ PhoenixFunctions.prototype = {
      * Generate a friendly url to post based on title
      */
     generateFriendlyUrlToPost: function(publication){
-        publication.slug = this.sanitize(publication.title);
-        publication.url = "#/post/" + publication.id + "/" + publication.slug;
+        if(!publication.slug){
+            publication.slug = this.sanitize(publication.title);
+        }
+        if(!publication.url){
+            publication.url = "#/post/" + publication.id + "/" + publication.slug;
+        }
         return publication;
     },
 
@@ -42,8 +46,12 @@ PhoenixFunctions.prototype = {
      * Generate a friendly url to post based on title
      */
     generateFriendlyUrlToPage: function(publication){
-        publication.slug = this.sanitize(publication.title);
-        publication.url = "#/page/" + publication.id + "/" + publication.slug;
+        if(!publication.slug){
+            publication.slug = this.sanitize(publication.title);
+        }
+        if(!publication.url){
+            publication.url = "#/page/" + publication.id + "/" + publication.slug;
+        }
         return publication;
     },
 
