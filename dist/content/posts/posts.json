@@ -1,49 +1,343 @@
 [
     {
         "id": "1",
-        "title": "The Empire Strikes Back",
-        "excerpt": "Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. Remember, a Jedi can feel the Force flowing through him. Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid.",
-        "image":"content/posts/images/starwars_the_empire_strikes_back.jpg",
+        "title": "Getting Started with Underscore.js",
+        "url": "http://www.sitepoint.com/getting-started-with-underscore-js/?utm_content=buffer0545c&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer",
+        "excerpt": "",
         "categories": [
-            "star-wars", "the-empire-strikes-back","movies"
+            "underscorejs","javascript","frontend"
         ],
-        "tags":[
-            "lorem","ipsum"
-        ],
-        "author":"Rondy Mesquita",
-        "date":"January 28, 2015",
-        "type":"md",
-        "url": "http://google.com.br"
-    }
-    ,
+        "date":"January 18, 2016"
+    },
     {
         "id": "2",
-        "title": "A New Hope",
-        "excerpt": "Look, I ain't in this for your revolution, and I'm not in it for you, Princess. I expect to be well paid. I'm in it for the money. I care. So, what do you think of her, Han? He is here. What?! I find your lack of faith disturbing. You are a part of the Rebel Alliance and a traitor! Take her away!",
-        "image":"content/posts/images/starwars_a_new_hope.jpg",
+        "title": "Why you should not use AngularJS",
+        "url": "https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99#.a91c9hfqv",
+        "excerpt": "",
         "categories": [
-            "star-wars", "a-new-hope","movies"
+            "angularjs","javascript","frontend"
         ],
-        "tags":[
-            "turpis","basvitaeic"
-        ],
-        "author":"Rondy Mesquita",
-        "date":"January 28, 2015",
-        "type":"md"
+        "date":"January 8, 2016"
     },
     {
         "id": "3",
-        "title": "The Clone Wars",
-        "excerpt": "Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force. All right. Well, take care of yourself, Han. I guess that's what you're best at, ain't it? Oh God, my uncle. How am I ever gonna explain this? Dantooine. They're on Dantooine. I call it luck.",
-        "image":"content/posts/images/starwars_the_clone_wars.jpg",
+        "title": "How to Write a Command Line Application in Node.js",
+        "url": "http://blog.liangzan.net/blog/2012/07/30/how-to-write-a-command-line-application-in-node-dot-js/",
+        "excerpt": "",
         "categories": [
-            "star-wars", "the-clone-wars","animation"
+            "nodejs","javascript","backend"
         ],
-        "tags":[
-            "turpis","basvitaeic"
+        "date":"January 8, 2016"
+    },
+    {
+        "id": "4",
+        "title": "inquirer - A collection of common interactive command line user interfaces.",
+        "url": "https://www.npmjs.com/package/inquirer,",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
         ],
-        "author":"Rondy Mesquita",
-        "date":"January 28, 2015",
-        "type":"html"
+        "date":"January 8, 2016"
+    },
+    {
+        "id": "5",
+        "title": "prompt - A beautiful command-line prompt for node.js",
+        "url": "https://www.npmjs.com/package/prompt",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
+        ],
+        "date":"January 8, 2016"
+    },
+    {
+        "id": "6",
+        "title": "How do I prompt users for input from a command-line script?",
+        "url": "https://docs.nodejitsu.com/articles/command-line/how-to-prompt-for-command-line-input",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
+        ],
+        "date":"January 8, 2016"
+    },
+    {
+        "id": "7",
+        "title": "Build a Node.js-powered Chatroom Web App: Node, MongoDB and Socket",
+        "url": "http://www.sitepoint.com/build-node-js-powered-chatroom-web-app-node-mongodb-socket/",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "8",
+        "title": "Creating Your First Node.js Command-line Application",
+        "url": "http://tutorialzine.com/2014/09/creating-your-first-node-js-command-line-application/",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "9",
+        "title": "Pro CSS and HTML Design Patterns",
+        "url": "http://cssdesignpatterns.com",
+        "excerpt": "",
+        "categories": [
+            "css","html","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "10",
+        "title": "WebDriver executeAsyncScript vs executeScript",
+        "url": "http://stackoverflow.com/questions/13452822/webdriver-executeasyncscript-vs-executescript",
+        "excerpt": "",
+        "categories": [
+            "stackoverflow","selenium","java","test","automation"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "11",
+        "title": "Getting Started with Node.js and Jasmine",
+        "url": "https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-jasmine",
+        "excerpt": "",
+        "categories": [
+            "nodejs","jasmine","javascript","test","automation"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "12",
+        "title": "Getting Started with Node.js and Mocha",
+        "url": "https://semaphoreci.com/community/tutorials/getting-started-with-node-js-and-mocha",
+        "excerpt": "",
+        "categories": [
+            "nodejs","mocha","javascript","test","automation"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "13",
+        "title": "Unit Test Your JavaScript Using Mocha and Chai",
+        "url": "http://www.sitepoint.com/unit-test-javascript-mocha-chai/",
+        "excerpt": "",
+        "categories": [
+            "chai","mocha","javascript","test","automation"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "14",
+        "title": "Injecting Dependencies in config() modules - AngularJS",
+        "url": "http://stackoverflow.com/questions/17485900/injecting-dependencies-in-config-modules-angularjs",
+        "excerpt": "",
+        "categories": [
+            "angularjs","javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "15",
+        "title": "Configuring Dependency Injection in AngularJS",
+        "url": "http://joelhooks.com/blog/2013/08/18/configuring-dependency-injection-in-angularjs/",
+        "excerpt": "",
+        "categories": [
+            "angularjs","javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "16",
+        "title": "Best Practices for Building Angular.js Apps",
+        "url": "https://medium.com/@dickeyxxx/best-practices-for-building-angular-js-apps-266c1a4a6917#.3t80123h2",
+        "excerpt": "",
+        "categories": [
+            "angularjs","javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "17",
+        "title": "Javascript and CSS best practices",
+        "url": "https://github.com/stevekwan/best-practices",
+        "excerpt": "",
+        "categories": [
+            "css","javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "18",
+        "title": "24 Boas Práticas no JavaScript para Iniciantes",
+        "url": "http://code.tutsplus.com/pt/tutorials/24-javascript-best-practices-for-beginners--net-5399",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "19",
+        "title": "30 HTML Best Practices for Beginners",
+        "url": "http://code.tutsplus.com/tutorials/30-html-best-practices-for-beginners--net-4957",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend","html"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "20",
+        "title": "Front End Resources",
+        "url": "http://enboard.co/frontend/",
+        "excerpt": "Organized resources about front end development. There are also included general web development / marketing links here, but they will be soon transfered to another board.",
+        "categories": [
+            "javascript","frontend","html","design","css","framework","library"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "21",
+        "title": "HTML5 Doctor",
+        "url": "http://html5doctor.com",
+        "excerpt": "",
+        "categories": [
+            "html","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "22",
+        "title": "CSS tricks",
+        "url": "https://css-tricks.com",
+        "excerpt": "",
+        "categories": [
+            "html","frontend","css"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "23",
+        "title": "Writing Modular JavaScript With AMD, CommonJS & ES Harmony",
+        "url": "https://addyosmani.com/writing-modular-js/",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "24",
+        "title": "Writing Testable Code in JavaScript: A Brief Overview",
+        "url": "https://www.toptal.com/javascript/writing-testable-code-in-javascript",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend","test"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "25",
+        "title": "Writing Testable Frontend Javascript Part 1 - Anti-patterns and their fixes",
+        "url": "https://shanetomlinson.com/2013/testing-javascript-frontend-part-1-anti-patterns-and-fixes/",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend","test"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "26",
+        "title": "Learning JavaScript Design Patterns",
+        "url": "https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend","design patterns"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "27",
+        "title": "Writing Testable JavaScript",
+        "url": "http://alistapart.com/article/writing-testable-javascript",
+        "excerpt": "",
+        "categories": [
+            "javascript","frontend","test"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "28",
+        "title": "Understanding module.exports and exports in Node.js",
+        "url": "http://www.sitepoint.com/understanding-module-exports-exports-node-js/?utm_content=buffer57b9c&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "29",
+        "title": "Understanding Angular’s $apply() and $digest()",
+        "url": "http://www.sitepoint.com/understanding-angulars-apply-digest/",
+        "excerpt": "",
+        "categories": [
+            "angularjs","javascript","frontend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "30",
+        "title": "Introduction to Unit Test: Controllers",
+        "url": "http://angular-tips.com/blog/2014/06/introduction-to-unit-test-controllers/",
+        "excerpt": "",
+        "categories": [
+            "angularjs","javascript","frontend","test"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "31",
+        "title": "AngularJS Testing Tips: Testing Directives",
+        "url": "http://www.sitepoint.com/angular-testing-tips-testing-directives/",
+        "excerpt": "",
+        "categories": [
+            "angularjs","javascript","frontend","test"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "32",
+        "title": "Criando um server de push notifications para notificações em tempo real com socket.io e nodejs",
+        "url": "http://rcdevlabs.github.io/2015/02/11/criando-um-server-de-push-notifications-para-notificacoes-em-tempo-real-com-socket-io-e-nodejs/",
+        "excerpt": "",
+        "categories": [
+            "nodejs","javascript","backend"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "33",
+        "title": "Como funciona os Push Notifications",
+        "url": "https://academiawebapps.com/como-funciona-os-push-notifications/",
+        "excerpt": "",
+        "categories": [
+            "nodejs","socket"
+        ],
+        "date":"April 22, 2016"
+    },
+    {
+        "id": "34",
+        "title": "AirNotifier: um servidor de mensagens push para aplicativos móveis",
+        "url": "http://blog.locaweb.com.br/geral/airnotifier-um-servidor-de-mensagens-push-para-aplicativos-mobile/",
+        "excerpt": "",
+        "categories": [
+            "socket","nodejs"
+        ],
+        "date":"April 22, 2016"
     }
+
 ]
