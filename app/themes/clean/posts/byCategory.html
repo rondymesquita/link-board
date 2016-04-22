@@ -1,6 +1,17 @@
 <phx-header>
 </phx-header>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <form id="form-search" class="navbar-form navbar-left">
+            	<i class="fa fa-search"></i>
+            	<input type="search" class="form-control" ng-model="search" placeholder="{{constants.searchPlaceholder}}" autofocus/>
+            </form>
+        </div>
+    </div>
+</div>
+
     <div class="container">
 
         <div class="row sub-header">
@@ -9,21 +20,24 @@
                     <a href="#/">Home</a> /
                     {{constants.category}}{{category}}
                 </h2>
+                <h3 ng-show="postsFiltered.length > 0">{{constants.searchResultTitle}} {{postsFiltered.length}}</h3>
+                <h3 ng-show="postsFiltered.length == 0">{{constants.searchEmptyResultTitle}}</h3>
             </div>
         </div>
 
     	<div class="row">
     		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-    			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage" class="post-preview">
+    			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage | filter:search as postsFiltered" class="post-preview">
     				<a href="{{post.url}}">
     					<h2 class="post-title">
     						{{post.title}}
     					</h2>
-                        <p class="post-subtitle hide">
-    						{{post.excerpt}}
-    					</p>
     				</a>
-    				<p class="post-meta hide">{{post.date}} {{constants.postedBy}} {{post.author}}</p>
+                    <div style="display:table;margin:auto">
+                        <span ng-repeat="category in post.categories" class="post-subtitle">
+                            <a href="#/category/{{category}}">{{category}}</a><span ng-show="$first || $middle">,</span>
+                        </span>
+                    </div>
     			</div>
     			<hr>
 
