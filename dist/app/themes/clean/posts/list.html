@@ -1,0 +1,58 @@
+<phx-header>
+</phx-header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <form id="form-search" class="navbar-form navbar-left">
+            	<i class="fa fa-search"></i>
+            	<input type="search" class="form-control" ng-model="search" placeholder="{{constants.searchPlaceholder}}" autofocus/>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" ng-hide="search">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<h2 class="post-title">
+				{{constants.categories}}
+			</h2>
+			<div ng-repeat="category in categories" class="post-preview">
+				<a href="{{category.url}}">
+					<h2 class="post-title">
+						{{category.title}}
+					</h2>
+				</a>
+			</div>
+			<hr>
+		</div>
+	</div>
+</div>
+<div class="container" ng-show="search">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<h2 class="post-title">
+				{{constants.archives}}
+			</h2>
+
+            <h3 ng-show="postsFiltered.length > 0">{{constants.searchResultTitle}} {{postsFiltered.length}}</h3>
+            <h3 ng-show="postsFiltered.length == 0">{{constants.searchEmptyResultTitle}}</h3>
+
+			<div dir-paginate="post in posts | itemsPerPage: pagItemsPerPage | filter:search as postsFiltered" class="post-preview">
+				<a href="{{post.url}}">
+					<h2 class="post-title">
+						{{post.title}}
+					</h2>
+				</a>
+			</div>
+			<hr>
+
+			<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)"></dir-pagination-controls>
+		</div>
+	</div>
+</div>
+
+<phx-footer>
+</phx-footer>
